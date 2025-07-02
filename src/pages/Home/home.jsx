@@ -13,7 +13,7 @@ function App() {
         <div className="content">
           <div className="text-section">
             <h1>
-              <span className="highlight">Intelligent</span> Elearning Platform
+              <span className="highlight">Intelligent</span><br/> <br /> e-Learning Platform
             </h1>
             <p>
               using <span className="highlight-box">Generative AI</span>
