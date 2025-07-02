@@ -1,0 +1,115 @@
+.exam-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.question-card {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff;
+  border-radius: 8px;
+}
+
+.question-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.question-text svg {
+  min-width: 40px;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.option {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  background: white;
+  transition: 0.2s;
+}
+
+.option:hover {
+  background-color: #f1f1f1;
+}
+
+.option input {
+  margin-right: 8px;
+}
+
+.option.selected {
+  border-color: #007bff;
+  background-color: #eaf4ff;
+}
+
+.option.correct {
+  background-color: #d4edda;
+  border-color: #28a745;
+}
+
+.option.incorrect {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+}
+
+.icon-correct {
+  color: #28a745;
+  font-size: 18px;
+}
+
+.icon-wrong {
+  color: #dc3545;
+  font-size: 18px;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+

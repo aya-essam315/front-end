@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #f1c40f;
+  padding: 15px;
+  position: fixed; /* يخليها ثابتة في الأعلى */
+  top: 0; /* يلصقها في أعلى الصفحة */
+  left: 0; /* يجعلها تبدأ من أقصى اليسار */
+  width: 100%; /* يجعل عرضها يغطي الصفحة بالكامل */
+  z-index: 1000; /* يتأكد أنها فوق أي عنصر آخر */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0; /* يزيل الحواف المستديرة */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links-special {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  width: 99%;
+  justify-content: end;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* تعديل الهيدر الرئيسي للصفحة عشان ياخد مساحة بعد الناف بار */
+.main-content {
+  padding-top: 60px; /* يمنع المحتوى من الاختباء خلف الناف بار */
+}

@@ -1,0 +1,209 @@
+/* CourseContentPage.css */
+html,
+body {
+  padding: 0;
+  overflow-y: auto;
+  background: #fafafa;
+  color: black;
+}
+
+.course-content-container {
+  padding: 20px;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-topic {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.icon-button {
+  background: none;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.icon-pencil {
+  width: 20px;
+  height: 20px;
+}
+
+.content-box {
+  margin-top: 20px;
+}
+
+.content-box p:not(:first-child) {
+  margin-top: 50px;
+}
+
+.main-title {
+  font-size: 2em;
+  color: #4a90e2;
+  margin-top: 20px;
+}
+
+.subheading {
+  font-size: 1.5em;
+  color: #4a90e2;
+  margin-top: 15px;
+}
+
+.sub-subheading {
+  font-size: 1.2em;
+  color: #7b8c99;
+  margin-top: 10px;
+}
+
+.paragraph {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.divider {
+  margin: 20px 0;
+}
+.media-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.media-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s;
+}
+
+.btn-ppt {
+  background-color: #d9534f; /* أحمر */
+}
+
+.btn-ppt:hover {
+  background-color: #c9302c;
+}
+
+.btn-video {
+  background-color: #0275d8; /* أزرق */
+}
+
+.btn-video:hover {
+  background-color: #025aa5;
+}
+
+.btn-audio {
+  background-color: #5cb85c; /* أخضر */
+}
+
+.btn-audio:hover {
+  background-color: #449d44;
+}
+
+.btn-icon {
+  font-size: 1.3em;
+}
+
+/* CourseContentPage.css */
+.course-content-container {
+  padding: 20px;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lecture-title {
+  font-size: 2.5em;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box {
+  margin-top: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.main-title {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.subheading {
+  font-size: 2em;
+  color: #4a90e2;
+  margin-top: 20px;
+}
+
+.subsubheading {
+  font-size: 1.5em;
+  color: #4a90e2;
+  margin-top: 15px;
+}
+
+.subsubsubheading {
+  font-size: 1.2em;
+  color: #4a90e2;
+  margin-top: 10px;
+}
+
+.paragraph {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.list-item {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.media-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.content-editor {
+  width: 98vw;
+  height: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}

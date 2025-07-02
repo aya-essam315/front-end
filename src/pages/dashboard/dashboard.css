@@ -1,0 +1,397 @@
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+  width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+  height: fit-content;
+  min-height: 1000px;
+  min-width: 300px;
+  background-color: #7c74d0;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border-radius: 20px; */
+  margin-top: 40px;
+}
+
+.sidebar .logo {
+  font-size: 28px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+  margin-bottom: 20px;
+}
+
+.courses-title {
+  font-size: 22px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+}
+
+.empty-message {
+  font-size: 16px; /* زيادة حجم الخط */
+  color: #ddd;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+}
+
+.sidebar ul li:hover {
+  background-color: #6a64b5;
+}
+
+.new-course {
+  background-color: #6a64b5;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s;
+  font-size: 18px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+}
+
+.new-course:hover {
+  background-color: #5a4bb5;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  background-color: #f8f8f8;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.topbar {
+  background-color: #ffeb3b;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Services Section */
+.services {
+  margin-top: 40px;
+}
+.services h2 {
+  font-size: 26px; /* زيادة حجم الخط */
+  margin-bottom: 20px;
+  font-weight: bold; /* جعل النص Bold */
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-sizing: border-box;
+  min-height: 200px;
+  font-size: 20px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+  color: black;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card p {
+  margin-top: 10px;
+  font-size: 18px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+}
+
+/* Warning Box */
+.warning-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.warning-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.warning-box button {
+  background-color: #7c74d0;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+}
+
+.warning-box button:hover {
+  background-color: #6a64b5;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  max-width: 90%;
+}
+
+.modal-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.level-options {
+  display: flex;
+  justify-content: center; /* يخليهم في النص */
+  gap: 10px; /* مسافة بين الاختيارات */
+  flex-wrap: wrap; /* علشان لو الشاشة صغيرة ينزلوا تحت بعض */
+}
+
+.check-radio {
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 2px solid #7c74d0;
+  color: #7c74d0;
+  transition: all 0.3s;
+  font-size: 16px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+}
+
+.check-radio.selected {
+  background: #7c74d0;
+  color: white;
+}
+
+/* Nested List Styling */
+.sidebar ul ul {
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+.sidebar ul ul li {
+  /* background: #9b90ff; */
+  font-size: 16px; /* زيادة حجم الخط */
+  font-weight: bold; /* جعل النص Bold */
+}
+
+/* تغيير لون زر الـ Submit */
+
+.submit-btn:hover {
+  background-color: #5a4bb5; /* تأثير عند التمرير */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Add z-index to make sure the modal is above other elements like navbar */
+}
+
+.modal-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%; /* Adjust the width to make it look full-screen or per your preference */
+  max-width: 800px; /* Optional: set a max width for better control */
+  box-sizing: border-box;
+  max-height: 90vh; /* Set max height to 90% of the viewport height */
+  overflow-y: auto; /* Enable vertical scroll if content exceeds the max-height */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.drill-btn,
+.exam-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.drill-btn {
+  background-color: #f39c12;
+  color: white;
+}
+
+.exam-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.drill-btn:hover {
+  background-color: #e67e22;
+}
+
+.exam-btn:hover {
+  background-color: #2980b9;
+}
+/* إضافة اللون الأخضر عند النقر على subtopic */
+.sidebar ul ul li.active {
+  background-color: #4caf50;
+  color: white;
+  transition: none; /* إيقاف تأثير الانتقال */
+}
+
+.sidebar ul li.selected {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  transition: none; /* إيقاف تأثير الانتقال */
+}
+
+.sidebar ul ul li.selected {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  transition: none; /* إيقاف تأثير الانتقال */
+}
+
+/* إضافة كلاس selected-title لتمييز العنصر المختار */
+.selected-title {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  transition: none; /* إيقاف تأثير الانتقال */
+  padding: 12px;
+}
+
+.gold-button {
+  background-color: #ffc003;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.gold-button:hover {
+  background-color: #c370ff;
+}
+.modal-actions {
+  display: grid;
+}
+
+
+.welcome-box {
+  background-color: #fdf7e3;
+  border: 2px dashed #f4c10f;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  margin: 80px auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-box h2 {
+  font-size: 1.8rem;
+  color: #5f4b8b;
+  margin-bottom: 10px;
+}
+
+.welcome-box p {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+}

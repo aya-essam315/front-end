@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+  padding-top: 80px; /* يضيف مساحة عشان المحتوى ميبدأش تحت النافبار مباشرة */
+}
+
+.container {
+  background: #2c2c64;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffcc33;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Main Content */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0 50px;
+}
+
+.text-section {
+  text-align: left;
+  max-width: 50%;
+  font-size: 24px;
+}
+
+.highlight {
+  color: cyan;
+}
+
+.highlight-box {
+  background: #ffcc33;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.teacher-btn,
+.student-btn {
+  padding: 10px 20px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.teacher-btn {
+  background: #9990ff;
+  color: white;
+}
+
+.student-btn {
+  background: #664fee;
+  color: white;
+}
+
+/* Image Section */
+.image-section {
+  position: relative;
+}
+
+.robot-image {
+  width: 500px;
+  position: absolute;
+  right: 120px;
+  bottom: -120px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 20px;
+}
+
+.chatbot-logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.bot-text {
+  color: cyan;
+}
