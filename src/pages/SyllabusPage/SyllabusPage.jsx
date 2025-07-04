@@ -145,7 +145,7 @@ function SyllabusPage() {
   return (
     <div className="syllabus-page">
       <div className="syllabus-container">
-        <h2>Edit Syllabus for Math for Beginners</h2>
+        <h2>Edit Syllabus </h2>
 
         <div className="add-main-section">
           <input
